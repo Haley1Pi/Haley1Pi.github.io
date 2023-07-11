@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .title-bar {
+            background-color: #92C7C7; /* Viola purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 70vw;
+            margin: 0 auto;
+        }
+        .gallery div {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            height: 300px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title-bar">Gallery</div>
+
+<div class="gallery">
+    <div><img src="image1.jepg" alt="Image 1"></div>
+    <div><img src="image2.jepg" alt="Image 2"></div>
+    <div><img src="image3.jepg" alt="Image 3"></div>
+    <div><img src="image4.jepg" alt="Image 4"></div>
+
+    <!-- more images here -->
+</div>
+
+</body>
+</html>
